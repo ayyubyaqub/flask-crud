@@ -61,9 +61,3 @@ class UserRole(db.Model, BaseMixin, ReprMixin):
     UniqueConstraint(role_id, user_id, 'role_user_un')
 
 
-
-class Employee(db.Model, BaseMixin, ReprMixin):
-    __tablename__ = 'employee'
-    name = db.Column(db.String(100), nullable=False)
-    position = db.Column(db.String(100))
-    department = db.Column(db.String(100))

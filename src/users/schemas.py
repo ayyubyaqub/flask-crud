@@ -1,7 +1,7 @@
 """ user/schemas.py"""
 
 from src import ma, BaseSchema
-from .models import User, UserProfile,Employee
+from .models import User, UserProfile
 
 
 class UserSchema(BaseSchema):
@@ -27,6 +27,3 @@ class UserProfileSchema(BaseSchema):
 
 
 
-class EmployeeSchema(BaseSchema):
-    class Meta:
-        model = Employee
